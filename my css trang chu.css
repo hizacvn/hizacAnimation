@@ -1,0 +1,100 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #212534;
+            display: static;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+            .prevent-context-menu{ pointer-events: none;}
+
+        #header {
+            background-size: cover; /* Đảm bảo hình ảnh sẽ bao phủ toàn bộ phần tử */
+            background-position: center; /* Căn giữa hình ảnh */
+            background-image: url(anh/bcf7c34a-5069-46f4-8c2e-2209fcbd6eec.png);
+            background-color: #0a0ac4;
+            padding: 20px;
+            position: relative;
+            border-radius: 50px;
+            overflow: hidden;
+            margin: 0;
+            opacity: 1; /* Đặt opacity trên phần tử p */
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 1); /* Tạo shadow mờ 10px với độ mờ 50% */
+        }
+
+        #header p {
+            color: white;
+            font-size: 200%;
+            text-align: center;
+            -webkit-text-stroke: 3px black;
+            overflow: 1;
+        }
+
+        #big{font-size: 50px;}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-size: 1.5em;   
+        }
+        .namngan {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Số cột sẽ tự động điều chỉnh để vừa với kích thước của container */
+              grid-auto-rows: minmax(100px, auto); /* Chiều cao tự động điều chỉnh */
+              gap: 10px; /* Khoảng cách giữa các phần tử */
+        }
+            .movie {
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            .movie h2 {
+                margin-top: 0;
+            }
+            .btn {
+                  overflow: hidden;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #98FB98 ;
+                color: black;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            .btn:hover {
+                background-color: darkgreen;
+                color: white;
+                box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5); /* Tạo shadow mờ 10px với độ mờ 50% */
+            }
+        #a1{font-size: 60%;}
+        #a2{font-size: 80%;}
+        #red h2,p {color: red;text-shadow: 2px 2px 5px #000, -2px -2px 5px black;}
+        #black{color: black;}
+        #white{color: white;}
+
+.container {
+  display: flex; /* Sắp xếp các phần tử con theo hàng */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử con */
+    overflow-wrap: break-word; /* Xuống dòng tại từ */
+}
+
+.element {
+    width: 100%; /* Phần tử chiếm toàn bộ chiều rộng của container */
+    max-width: 100%; /* Chiều rộng tối đa của phần tử là chiều rộng của container */
+    display: block; /* Đảm bảo phần tử là một khối (block) */
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+    /* Các thuộc tính khác tùy chỉnh theo nhu cầu */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  opacity: 20%;
+  text-align: center;
+  text-decoration: none;
+}
+    .section {
+        margin-bottom: 20px; /* hoặc bất kỳ khoảng cách nào bạn muốn */
+    }
+    a{text-decoration: none;}

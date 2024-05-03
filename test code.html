@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mytest code </title>
+<style> body{background-color: black; color: white;} </style>
+</head>
+<body>
+	<h1 style="text-align: center;">học code java</h1>
+	<!-- hiển thị dữ liệu bằng java -->
+		<div style="border:1px solid black;text-align:center;background-color: pink;"><p id="code"></p></div>
+	<br> <!--chuột phải sẽ bị khoá khi bạn bấm trong khung này  -->
+		<div id="myDiv" style="border:1px solid black;text-align:center;background-color:#A9A9A9"><p>khoá chuột phải ở chỗ này</p></div>
+	<br><!-- đổi màu chữ bằng java -->
+		<div id="coler-java" style="border:1px solid black;text-align:center;background-color:#A9A9A9"><p>chữ đổi màu bằng java</p></div>
+	<br> <!-- nút bấm mở trang web html từ một link java -->
+		<div style="border:1px solid black;text-align:center;background-color:#A9A9A9"><button onclick="myfunction()">bấm vào để đến trang mới</button></div>
+	<br>
+		<!-- đếm xem số lượng link liên kết có trogn html -->
+		<div style="border: 1px solid black;text-align: center; background-color: #A9A9A9;">
+			<p><a href="/html/default.asp">HTML Tutorial</a></p>
+			<p><a href="/css/default.asp">CSS Tutorial</a></p>
+			<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+			<h2>số link được gắng trong trang web</h2>
+			<h3><p id="linktest"></p></h3>
+		</div>
+
+<script>
+	//code java hiển thị
+   		document.getElementById("code").innerHTML = "Hello World"
+	// code khoá chuột phải		
+		const div = document.getElementById("myDiv");
+				div.addEventListener("contextmenu", (e) => {e.preventDefault()});
+	// đổi màu chữ html bằng java
+		const myElement = document.getElementById("coler-java");
+		myElement.style.color = "red";
+	// tạo một nút bấm chuyển tiếp trang bằng java
+	 	function myfunction(){document.open();document.write("<p>trang web ở đây nằm trong trang java </p>");document.close();}
+	 // số lượng link có trong html 
+	 		let numb = document.links.length;
+		document.getElementById("linktest").innerHTML = numb;
+</script>
+
+</body>
+</html>
